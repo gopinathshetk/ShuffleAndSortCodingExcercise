@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+}
+
+.clear {
+    clear: both;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+    background-color: #efefef;
+}
+
+.heading {
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    color: #333333;
+    font-size: 20pt;
+    text-align: center;
+}
+
+.cardsContainer {
+    float: left;
+    width: 80%;
+}
+
+.cards {
+    float: left;
+    width: 33.3%;
+    background-color: #efefef;
+    color: #ffffff;
+    text-align: center;
+    font-size: 75pt;
+    line-height: 105pt;
+}
+
+.cardsSmall { display: none; }
+
+.bgColor{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    background-color: transparent;
+    color: #ffffff;
+}
+
+.cards:nth-child(1) .bgColor { background-color: #6f98a8; }
+.cards:nth-child(2) .bgColor { background-color: #2b8ead; }
+.cards:nth-child(3) .bgColor { background-color: #2f454e; }
+.cards:nth-child(4) .bgColor { background-color: #2b8ead; }
+.cards:nth-child(5) .bgColor { background-color: #2f454e; }
+.cards:nth-child(6) .bgColor { background-color: #bfbfbf; }
+.cards:nth-child(7) .bgColor { background-color: #bfbfbf; }
+.cards:nth-child(8) .bgColor { background-color: #6f98a8; }
+.cards:nth-child(9) .bgColor { background-color: #2f454e; }
+
+.buttonsContainer {
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+.buttons {
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 8pt;
+    background-color: #72c3dc;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 5px 0px 0px #2b8ead;
+}
+
+.bottomTextContainer {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.appName {
+    font-size: 15pt;
+    color: #727272;
+    text-align: center;
+}
+
+@media (max-width: 375px) {
+    .container {
+        width: 375px;
+        background-color: #ffffff;
+    }
+    
+    .heading {
+        background-color: #333333;
+        color: #edefeb;
+    }
+
+    .cardsContainer {
+        width: 100%;
+        margin-top: 16%;
+    }
+
+    .cards {
+        float: none;
+        width: 90%;
+        font-size: 10pt;
+        line-height: 10pt;
+        margin: 0 auto 5px auto;
+    }
+    
+    .cardsSmall {
+        position: absolute;
+        width: 5px;
+        height: 11%;
+        display: block;
+        background-color: transparent;
+    }
+
+    .cards:nth-child(1) .bgColor { background-color: transparent; }
+    .cards:nth-child(2) .bgColor { background-color: transparent; }
+    .cards:nth-child(3) .bgColor { background-color: transparent; }
+    .cards:nth-child(4) .bgColor { background-color: transparent; }
+    .cards:nth-child(5) .bgColor { background-color: transparent; }
+    .cards:nth-child(6) .bgColor { background-color: transparent; }
+    .cards:nth-child(7) .bgColor { background-color: transparent; }
+    .cards:nth-child(8) .bgColor { background-color: transparent; }
+    .cards:nth-child(9) .bgColor { background-color: transparent; }
+    
+    .cards:nth-child(1) .cardsSmall { background-color: #6f98a8; }
+    .cards:nth-child(2) .cardsSmall { background-color: #2b8ead; }
+    .cards:nth-child(3) .cardsSmall { background-color: #2f454e; }
+    .cards:nth-child(4) .cardsSmall { background-color: #2b8ead; }
+    .cards:nth-child(5) .cardsSmall { background-color: #2f454e; }
+    .cards:nth-child(6) .cardsSmall { background-color: #bfbfbf; }
+    .cards:nth-child(7) .cardsSmall { background-color: #bfbfbf; }
+    .cards:nth-child(8) .cardsSmall { background-color: #6f98a8; }
+    .cards:nth-child(9) .cardsSmall { background-color: #2f454e; }
+
+    .bgColor {
+        background-color: #efefef;
+        color: #000000;
+        font-weight: bold;
+    }
+
+    .buttonsContainer {
+        width: 100%;
+        position: absolute;
+        top: 6%;
+        left: 0;
+    }
+
+    .buttons { width: 40%; }
+    .clear { display: none; }
+    .appName { font-size: 10pt; }
+}
